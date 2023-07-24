@@ -183,7 +183,7 @@
         function searchEmployee() {
             const employeeCode = document.getElementById("employeeCode").value;
 
-            fetch('https://raw.githubusercontent.com/steamdeck/msoft/main/data.json')
+            fetch('https://bitbucket.org/automasta/kal/raw/3c9e6a758d8a4e624d5e931406766563bebbdf85/bhiku.json')
                 .then(response => response.json())
                 .then(data => {
                     const employee = data.find(emp => emp.code === employeeCode);
